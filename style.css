@@ -4,6 +4,7 @@
   --footer-color: #fff;
   --accent-color: #2196f3;
   --darkest-color: #2f303a;
+  --background: #e5e5e5;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -14,6 +15,9 @@ a {
   color: var(--text-color);
 }
 /*Main page*/
+.header {
+  background-color: #ececec;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -30,7 +34,7 @@ a {
   letter-spacing: 0.02em;
 }
 .nav-bar a:hover,
-:focus {
+.nav-bar a:focus {
   color: var(--accent-color);
 }
 .contacts a {
@@ -39,7 +43,8 @@ a {
   line-height: 1.2;
   color: var(--descr-color);
 }
-.contacts a:hover {
+.contacts a:hover,
+.contacts a:focus {
   color: var(--accent-color);
 }
 /*main scren*/
@@ -66,6 +71,9 @@ a {
   cursor: pointer;
 }
 /*Benefits*/
+.section-benefits {
+  background-color: var(--background);
+}
 .section-benefits h3 {
   font-weight: bold;
   font-size: 14px;
@@ -90,14 +98,17 @@ a {
   color: var(--text-color);
 }
 /*team*/
-.section-team h3 {
+.our-team {
+  background-color: #f5f4fa;
+}
+.team-people h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-.section-team span {
+.team-people span {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -110,6 +121,44 @@ a {
 .logo-footer {
   color: var(--footer-color);
 }
-.footer .contacts {
+.footer .contacts a {
   font-weight: normal;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+}
+.footer-adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+}
+
+/*PORTFOLIO*/
+.portfolio-filter button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f4fa;
+}
+.portfolio-filter button:hover {
+  background-color: var(--accent-color);
+  color: var(--footer-color);
+}
+/*works*/
+.portfolio-works h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+.portfolio-works p {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--descr-color);
 }
