@@ -147,6 +147,7 @@ a {
 .portfolio-filter button:hover {
   background-color: var(--accent-color);
   color: var(--footer-color);
+  cursor: pointer;
 }
 /*works*/
 .portfolio-works h2 {
