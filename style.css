@@ -33,16 +33,16 @@ a {
 :focus {
   color: var(--accent-color);
 }
-.header-contacts a {
+.contacts a {
   font-weight: 500;
   size: 14px;
   line-height: 1.2;
   color: var(--descr-color);
 }
-.header-contacts a:hover {
+.contacts a:hover {
   color: var(--accent-color);
 }
-/*main title*/
+/*main scren*/
 .main-screen {
   background-color: var(--darkest-color);
 }
@@ -79,4 +79,37 @@ a {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--descr-color);
+}
+/*services*/
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/*team*/
+.section-team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.section-team span {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--descr-color);
+}
+/*footer*/
+.footer {
+  background-color: var(--darkest-color);
+}
+.logo-footer {
+  color: var(--footer-color);
+}
+.footer .contacts {
+  font-weight: normal;
 }
