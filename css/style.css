@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
+  background-color: #fff;
 }
 a {
   text-decoration: none;
@@ -16,13 +17,37 @@ a {
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .current {
   color: var(--accent-color);
 }
 /*Main page*/
 .header {
-  background-color: #ececec;
+  background-color: #fff;
+  border: 1px solid #ececec;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -33,15 +58,31 @@ ul {
 .logo > span {
   color: var(--accent-color);
 }
-.nav-bar a {
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-.nav-bar a:hover,
-.nav-bar a:focus {
+.nav-bar .link:hover,
+.nav-bar .link:focus {
   color: var(--accent-color);
+}
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+.contacts .item + .item {
+  margin-left: 50px;
 }
 .contacts a {
   font-weight: 500;
@@ -56,6 +97,7 @@ ul {
 /*main scren*/
 .main-screen {
   background-color: var(--darkest-color);
+  height: calc(100vh - 80px);
 }
 .main-title {
   font-weight: 900;
@@ -65,6 +107,9 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--footer-color);
+  margin: 0;
+  padding-top: 25vh;
+  display: block;
 }
 .btn-order {
   background-color: var(--accent-color);
@@ -75,10 +120,20 @@ ul {
   line-height: 1.9;
   text-align: center;
   cursor: pointer;
+  width: 200px;
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 10px 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }
 /*Benefits*/
 .section-benefits {
-  background-color: var(--background);
+  display: flex;
+}
+.section-benefits .benefits-box + .benefits-box {
+  margin-left: 30px;
 }
 .benefits-title {
   font-weight: 700;
@@ -102,10 +157,30 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 50px;
+}
+.services-images .item + .item {
+  margin-left: 30px;
+}
+.services-images .item {
+  display: inline-block;
 }
 /*team*/
 .our-team {
   background-color: #f5f4fa;
+}
+.team-people {
+  display: flex;
+}
+.team-people .item {
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.team-people .item + .item {
+  margin-left: 30px;
 }
 .team-people h3 {
   font-weight: 500;
@@ -168,4 +243,8 @@ ul {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--descr-color);
+}
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
