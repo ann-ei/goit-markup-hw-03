@@ -201,18 +201,35 @@ ul {
 }
 .logo-footer {
   color: var(--footer-color);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer .contacts a:hover {
+  color: var(--accent-color);
+}
+.footer-adress .item {
+  display: block;
+  margin-bottom: 10px;
+}
+.footer-adress a {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+  font-style: normal;
 }
 .footer .contacts a {
   font-weight: normal;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.5;
 }
-.footer-adress {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--footer-color);
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer .contacts {
+  display: block;
 }
 
 /*PORTFOLIO*/
@@ -243,8 +260,4 @@ ul {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--descr-color);
-}
-.footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
