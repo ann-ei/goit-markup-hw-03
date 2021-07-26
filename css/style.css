@@ -29,6 +29,11 @@ ul {
   padding: 0;
   margin: 0;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -252,6 +257,14 @@ ul {
 }
 
 /*PORTFOLIO*/
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-filter li + li {
+  margin-left: 8px;
+}
 .portfolio-filter button {
   font-weight: 500;
   font-size: 16px;
@@ -260,23 +273,45 @@ ul {
   letter-spacing: 0.03em;
   font-family: "Roboto", sans-serif;
   background-color: #f5f4fa;
+  border: none;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
-.portfolio-filter button:hover {
+.portfolio-filter button:hover,
+.portfolio-filter button:focus {
   background-color: var(--accent-color);
   color: var(--footer-color);
   cursor: pointer;
+  color: #fff;
 }
 /*works*/
+.portfolio-works {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.portfolio-works > .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+
+  border: 1px solid #eee;
+}
 .portfolio-works h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
+  margin-bottom: 4px;
 }
 .portfolio-works p {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--descr-color);
+}
+.card-content {
+  padding: 20px 24px;
 }
